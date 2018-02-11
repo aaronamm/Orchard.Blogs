@@ -15,11 +15,11 @@ namespace CodeSanook.Api
             return new RouteDescriptor[] {
                 new HttpRouteDescriptor {
                     Name = "UserApi",
-                    Priority = 0,
-                    RouteTemplate = "api/user/{id}",
+                    Priority = 100,
+                    RouteTemplate = "api/v1/{controller}/{id}",
                     Defaults = new {
                         area = "CodeSanook.Api",
-                        controller = "UserApi",
+                        controller = "Users",
                         id = RouteParameter.Optional
                     }
                 }

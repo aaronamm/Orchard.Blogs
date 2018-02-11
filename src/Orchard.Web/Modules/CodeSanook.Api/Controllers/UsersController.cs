@@ -6,13 +6,13 @@ using System.Collections.Generic;
 
 namespace CodeSanook.Api.Controllers
 {
-    public class UserApiController : ApiController
+    public class UsersController : ApiController
     {
 
         public IOrchardServices Services { get; set; }
         public Localizer T { get; set; }
 
-        public UserApiController(IOrchardServices services)
+        public UsersController(IOrchardServices services)
         {
             Services = services;
             T = NullLocalizer.Instance;
